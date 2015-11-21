@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+	<name>	
+Waterloo and City line tube connections	</name>
+  <atom:link href="http://www.doogal.co.uk" />
+<Style id="Waterloo and City">
+<LineStyle>
+<color>ffcec370</color><width>5</width></LineStyle>
+</Style>
+<Placemark>
+<name>Waterloo and City</name>
+<styleUrl>#Waterloo and City</styleUrl>
+<LineString><coordinates>
+-0.11324484659974,51.503146653078,0
+-0.088985715325045,51.513347072699,0
+</coordinates></LineString>
+</Placemark>
+</Document></kml>

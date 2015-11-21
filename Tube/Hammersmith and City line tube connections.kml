@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+	<name>	
+Hammersmith and City line tube connections	</name>
+  <atom:link href="http://www.doogal.co.uk" />
+<Style id="Hammersmith and City">
+<LineStyle>
+<color>ffa899e8</color><width>5</width></LineStyle>
+</Style>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.22462575515926,51.493483379174,0
+-0.22738960127533,51.502076993967,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.22738960127533,51.502076993967,0
+-0.22738608723774,51.505880735504,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.22738608723774,51.505880735504,0
+-0.2244582012666,51.509658221839,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.2244582012666,51.509658221839,0
+-0.21744525733064,51.513958124663,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.21744525733064,51.513958124663,0
+-0.21018376269161,51.517210698742,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.21018376269161,51.517210698742,0
+-0.20086810419124,51.520988865484,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.20086810419124,51.520988865484,0
+-0.18880926348942,51.518294375269,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.18880926348942,51.518294375269,0
+-0.17572234283505,51.515393806532,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.17572234283505,51.515393806532,0
+-0.1676538436008,51.51999806318,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.1676538436008,51.51999806318,0
+-0.15688978273689,51.523129639184,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.15688978273689,51.523129639184,0
+-0.14394701338886,51.52378881305,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.14394701338886,51.52378881305,0
+-0.13328205840994,51.528664346375,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.13328205840994,51.528664346375,0
+-0.12385771561154,51.530312476892,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.12385771561154,51.530312476892,0
+-0.10482865117184,51.520195700647,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.10482865117184,51.520195700647,0
+-0.097707167852645,51.520215295016,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.097707167852645,51.520215295016,0
+-0.08900327764505,51.518437149414,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.08900327764505,51.518437149414,0
+-0.082235212309326,51.517598273919,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.082235212309326,51.517598273919,0
+-0.072987053548915,51.515081631079,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.072987053548915,51.515081631079,0
+-0.059406074587337,51.519587792346,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.059406074587337,51.519587792346,0
+-0.047368111957746,51.521995838874,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.047368111957746,51.521995838874,0
+-0.032651671918221,51.525310973905,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.032651671918221,51.525310973905,0
+-0.024345177705763,51.527041809222,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.024345177705763,51.527041809222,0
+-0.01166796209473,51.52484020109,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+-0.01166796209473,51.52484020109,0
+0.0053318072586749,51.52852551818,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+0.0053318072586749,51.52852551818,0
+0.017795056275962,51.531288332324,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+0.017795056275962,51.531288332324,0
+0.034556255633226,51.536628195871,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+0.034556255633226,51.536628195871,0
+0.051530710126145,51.539246158049,0
+</coordinates></LineString>
+</Placemark>
+<Placemark>
+<name>Hammersmith and City</name>
+<styleUrl>#Hammersmith and City</styleUrl>
+<LineString><coordinates>
+0.051530710126145,51.539246158049,0
+0.0808460268962,51.539521102884,0
+</coordinates></LineString>
+</Placemark>
+</Document></kml>

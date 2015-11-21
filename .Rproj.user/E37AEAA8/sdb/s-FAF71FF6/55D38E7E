@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1448035638563.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "55D38E7E",
+    "lastKnownWriteTime" : 271160320,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "83lx88mjfl",
+        "caption" : "tube_lines",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=tube_lines&cache_key=83lx88mjfl",
+        "displayedObservations" : 14,
+        "environment" : "",
+        "object" : "tube_lines",
+        "totalObservations" : 14,
+        "variables" : 5
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
