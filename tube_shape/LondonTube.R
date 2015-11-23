@@ -3,6 +3,7 @@ library(rgdal)
 library(rgeos)
 library(ggmap)
 library(sp)
+library(plyr)
 
 #Load stations and wards
 wards <- readOGR("./LondonWards", "London_Ward_CityMerged")
@@ -73,7 +74,7 @@ points(stations, pch = 20, cex = 0.5, col = "black")
 
 #3 is the line's ID, 1 is the row of the coordinates x and y of the first point
 Central@lines[[3]]@Lines[[1]]@coords[1,2]
-
+###FUNCTIONS###
 #Given a SpatialLinesDataFrame, calculate the length of the segment corresponding to the id
 seg_length <- function(line, id){
     xx1 <- line@lines[[id]]@Lines[[1]]@coords[1,1]
@@ -111,7 +112,30 @@ which_length <- function(list, rank){
 which_length(line_list, 1)
 
 ##Question 2 - How many stations on the Piccadilly
-length(Piccadilly@lines)-1
+Piccadilly_buffer <- gBuffer(Piccadilly, width = 0.0001)
+Piccadilly_stations <- stations[Piccadilly_buffer, ]
+summary(Piccadilly_stations)
+plot(Piccadilly_buffer)
+points(Piccadilly_stations, col = "red")
 ##Question 3 - Average price along the wards of each line and which is the highest
-
+download.file(url = "https://files.datapress.com/london/dataset/average-house-prices-ward-lsoa-msoa/house-prices-Wards.csv",
+              dest = "./house-prices-wards.csv", method = "curl")
+#replace in excel "(£)" with "_GBP_" and "-" with ""
+house_prices_wards <- read.csv("./house-prices-wards.csv", sep = ",", stringsAsFactors = FALSE)
+names(house_prices_wards)[1] <- "GSS_CODE"
+wards@data <- join(wards@data, house_prices_wards)
 wards_Central <- wards[Central,]
+mean(wards_Central@data$Mean_GBP_2014, na.rm = TRUE)
+avg_houseprice_along <- function(List){
+    avg_price <- data.frame(Line = List$Line_Name, avg_GBP_HousePrice2014 = 0, stringsAsFactors = FALSE)
+    for(i in 1:length(avg_price$Line)){
+        name <- avg_price[i,1]
+        wards_name <- wards[get(name),]
+        avg_price[i,2] <- mean(wards_name@data$Mean_GBP_2014, na.rm = TRUE)
+    }
+    return(avg_price)
+}
+avg_houseprice_along(tube_lines)
+
+#
+

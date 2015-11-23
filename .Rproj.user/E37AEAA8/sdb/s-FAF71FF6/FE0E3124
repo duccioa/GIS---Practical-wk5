@@ -1,0 +1,17 @@
+{
+    "contents" : "library(maptools)\nlibrary(rgdal)\nlibrary(rgeos)\nlibrary(ggmap)\nlibrary(sp)\nlibrary(plyr)\nsetwd(\"/Users/duccioa/CLOUD/C07_UCL_SmartCities/London/spatialggplot/\")\nsport <- readOGR(\".\", \"london_sport\")\nproj4string(sport) <- CRS(\"+init=epsg:27700\")\nsport.wgs84 <- spTransform(sport, \"+init=epsg:4326\")\np <- ggplot(sport@data, aes(Partic_Per, Pop_2001))\np + geom_point(aes(color = Partic_Per, size = Pop_2001)) + geom_text(size = 4, aes(x = Partic_Per*1.02, y = Pop_2001*1.04, label = name))\nsport.f <- fortify(sport, region = \"ons_label\")\nsport.f <- merge(sport.f, sport@data, by.x = \"id\", by.y = \"ons_label\")\nMap <- ggplot(sport.f, aes(long, lat, group = group, fill = Partic_Per)) + geom_polygon() + \n    coord_equal() + labs(x = \"Easting (m)\", y = \"Northing (m)\", fill = \"% Sport Partic.\") + \n    ggtitle(\"London Sports Participation\")\nMap + scale_fill_gradient(low = \"white\", high = \"black\")\n#ggsave(\"my_large_plot.png\", scale = 3, dpi = 400)\n\n##MERGING DATA\nlnd <- readOGR(dsn = \".\", \"london_sport\")\ncrimeDat <- read.csv(\"boro.csv\")\nsummary(crimeDat$MajorText)\ncrimeTheft <- crimeDat[which(crimeDat$MajorText == \"Theft & Handling\"), ]\ncrimeAg <- aggregate(CrimeCount ~ Borough, FUN = \"sum\", data = crimeTheft)\nlnd$name %in% crimeAg$Borough\nlnd$name[which(!lnd$name %in% crimeAg$Borough)]\nlevels(crimeAg$Borough)\ncrimeAg <- rename(crimeAg, replace = c(Borough = \"name\"))\nlnd@data <- join(lnd@data, crimeAg)\nlnd_f <- fortify(lnd, region = \"name\")\nlnd_f <- merge(lnd_f, lnd@data, by.x = \"id\", by.y = \"name\")\ng <- ggplot(lnd_f, aes(long, lat, group = group, fill = CrimeCount)) +geom_polygon() + \n    coord_equal()\n\n##CLIPPING AND INTERSECTING\ndownload.file(\"http://www.personal.leeds.ac.uk/~georl/egs/lnd-stns.zip\", \"lnd-stns.zip\", method = \"curl\")\nunzip(\"lnd-stns.zip\")\n",
+    "created" : 1448128632333.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1636478947",
+    "id" : "FE0E3124",
+    "lastKnownWriteTime" : 1447744785,
+    "path" : "~/CLOUD/C07_UCL_SmartCities/GIS/wk5/map_practice2.R",
+    "project_path" : "map_practice2.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
